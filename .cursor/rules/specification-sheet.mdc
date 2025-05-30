@@ -1,0 +1,163 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Currency Converter - Specification Sheet
+
+## Project Overview
+
+**Purpose:**
+The Currency Converter web application is a desktop-first, responsive website inspired by [Wise's Currency Converter](mdc:https:/wise.com/us/currency-converter). It provides real-time currency conversion, live exchange rates, and easy-to-understand guidance on how currency conversion works.
+
+**Target Users:**
+- Travelers, freelancers, shoppers, and anyone dealing with multiple currencies.
+- Users looking for live exchange rates or quick conversions.
+- People learning about currency exchange and usage patterns.
+
+**Desired User Experience & Outcome:**  
+- Simple, clean interface for converting currencies.
+- Access to live exchange rates and most used pairings.
+- Clear visual guidance on how the site and currency conversion works.
+- Multilingual support based on the user's location.
+- Fully responsive design (desktop-first approach).
+
+## Technical Stack
+
+**Frontend:**
+- HTML5
+- CSS3
+- Bootstrap (minimal, utility-based)
+- JavaScript (vanilla)
+
+**APIs:**
+- [Frankfurter API](mdc:https:/www.frankfurter.app) *(Recommended - free, no key required)*
+- [ExchangeRate-API](mdc:https:/www.exchangerate-api.com) *(Optional fallback)*
+
+**Backend:**
+- Not applicable.
+
+**Database:**
+- Not applicable.
+
+**Authentication:**
+- Not required.
+
+**Security:**
+- HTTPS enforced by deployment provider.
+
+**Dev Tools:**
+- ESLint (Airbnb or StandardJS ruleset)  
+- Prettier for code formatting
+
+**Deployment:**
+- Managed independently by the developer.
+
+## UI/UX Design Guidelines
+
+### Layout and Responsiveness
+
+- Max width: **1200px**
+- Responsive breakpoints:
+  - **< 600px** - Mobile
+  - **600px - 900px** - Tablet
+  - **> 900px** - Desktop (primary target)
+- Flexbox for layout structure
+- Sticky top navigation bar that scrolls with the user
+
+### Typography
+
+**Font Choices:**
+- Primary Font: [Outfit](mdc:https:/fonts.google.com/specimen/Outfit) *(clean, geometric, freely available)*
+- Fallbacks: `Inter`, `sans-serif`
+
+**Font Weights:**
+- 300 - Light
+- 400 - Regular
+- 700 - Bold
+
+### Colors
+
+| Use Case              | HSL Value                 |
+|-----------------------|---------------------------|
+| Page Background       | `hsl(138, 100%, 20%)`   |
+| Accent (Buttons/Text) | `hsl(97, 72%, 67%)`     |
+| Form/Section BG       | `hsl(0, 0%, 95%)`       |
+| Button Hover          | Slightly darker accent    |
+| Button Active         | Even darker accent        |
+
+Ensure sufficient contrast and visible hover/active states for all interactive elements.
+
+## Sections Overview
+
+### 1. **Header / Navbar**
+- Sticky, always visible as the user scrolls.
+- **Left:** Text-based logo → `"Currency Converter"`
+- **Right Buttons:**
+  - Convert
+  - Rates
+  - Pairings
+
+### 2. **Main Section**
+
+#### a. Currency Converter Form
+- Two currency selectors
+- Input for amount
+- Display of converted value and current exchange rate
+
+#### b. Live Exchange Rates
+- Display 5 popular currency pairs with their live rates
+- Button to expand/add/view more pairs
+
+#### c. Most Used Pairings
+- Showcase commonly used conversion combinations
+
+#### d. How It Works
+- Step-by-step explanation of how conversion works
+- Educational and user-friendly
+
+#### e. Quick Guide / How to Use
+- Short textual or visual guide on using the converter
+- Can use icons or illustrated tips (no graph/chart needed)
+
+#### f. FAQ
+- Expandable/collapsible Q&A section to cover common questions
+
+### 3. **Footer**
+- Internal anchor links to all major sections:
+  - Convert
+  - Exchange Rates
+  - Top Pairings
+  - How It Works
+  - FAQ
+
+## Accessibility & Best Practices
+
+- Use semantic HTML (e.g., `<main>`, `<section>`, `<nav>`, `<footer>`)
+- Ensure keyboard navigability for all controls
+- Use ARIA roles/labels where appropriate
+- Provide alt text for any non-decorative images
+
+## Localization
+
+**Primary Language:** English  
+**Additional Languages (auto-detected):**
+- German
+- Spanish
+- Portuguese
+- French
+
+Use the browser's language setting (`navigator.language`) to determine default language and load translated content accordingly. Fallback to English.
+
+## Final Notes
+
+This specification sets the foundation for a functional, performant, and user-friendly currency converter. The layout should be developed using a **desktop-first approach** with careful attention to responsiveness. Code should follow best practices and be structured for readability, accessibility, and future extensibility.
+
+
+
+
+
+
+
+
+
