@@ -1,0 +1,52 @@
+*,
+*::before,
+*::after {
+  /* border: 1px solid red; */
+}
+
+body {
+  margin: 0 auto;
+  max-width: 1200px;
+  font-family: "Outfit", sans-serif;
+  background-color: hsl(138, 100%, 15%);
+}
+
+header {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo {
+  cursor: pointer;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: hsl(97, 72%, 67%);
+}
+
+header .logo:hover {
+  color: hsl(97, 72%, 50%);
+}
+
+header nav {
+  gap: 1rem;
+  display: flex;
+}
+
+header nav button {
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  transition: 0.3s ease;
+  color: hsl(138, 100%, 15%);
+  background-color: hsl(97, 72%, 67%);
+}
+
+header nav button:hover {
+  background-color: hsl(97, 72%, 50%);
+  transform: scale(1.05);
+}
