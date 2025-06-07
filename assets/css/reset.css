@@ -14,26 +14,6 @@ html {
   scroll-behavior: smooth; /* Enables smooth scroll when using anchor links */
 }
 
-/* * BODY - Base font family, and layout behavior */
-body {
-  display: flex; /* Enables flexbox layout */
-  min-height: 100%; /* Ensures body fills at least full screen */
-  overflow-x: hidden; /* Prevents horizontal scroll */
-  flex-direction: column; /* Stacks header, main, and footer vertically */
-  font-family: Arial, sans-serif; /* Modern system font stack */
-  -moz-osx-font-smoothing: grayscale; /* Better font rendering on macOS Firefox */
-  -webkit-font-smoothing: antialiased; /* Better font rendering on WebKit browsers */
-}
-
-/* * MAIN - Primary content */
-main {
-  width: 90%; /* Responsive width (shrinks on small screens) */
-  flex-grow: 1; /* Expands to fill space between header/footer */
-  padding: 1rem; /* Inner spacing */
-  margin: 2rem auto; /* Centers content with top/bottom spacing */
-  max-width: 1200px; /* Max width for larger screens */
-}
-
 /* * LINKS - Resetting default styles and hover behavior */
 a {
   color: inherit; /* Makes link color match surrounding text */

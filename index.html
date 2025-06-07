@@ -8,11 +8,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap"
+    rel="stylesheet">
   <title>Currency Converter</title>
 </head>
 
 <body>
+  <!-- Header -->
   <header>
     <div class="logo" href="#">Currency Converter</div>
     <nav>
@@ -22,6 +25,70 @@
     </nav>
   </header>
 
+  <!-- Main -->
+  <main>
+    <h1>CURRENCY CONVERTER</h1>
+
+    <!-- Currency Conversion Form -->
+    <form>
+      <div class="left-select">
+        <!-- Left Select -->
+        <select>
+          <option value="USD">USD</option>
+          <option value="EUR">EUR</option>
+          <option value="GBP">GBP</option>
+          <option value="CAD">CAD</option>
+          <option value="AUD">AUD</option>
+          <option value="JPY">JPY</option>
+          <option value="CHF">CHF</option>
+          <option value="CNY">CNY</option>
+          <option value="INR">INR</option>
+          <option value="MXN">MXN</option>
+          <option value="NZD">NZD</option>
+          <option value="RUB">RUB</option>
+          <option value="ZAR">ZAR</option>
+          <option value="BRL">BRL</option>
+        </select>
+        <input type="number" placeholder="Amount" min="0">
+      </div>
+      <div>TO</div>
+      <div class="right-select">
+        <!-- Right Select -->
+        <select>
+          <option value="USD">USD</option>
+          <option value="EUR">EUR</option>
+          <option value="GBP">GBP</option>
+          <option value="CAD">CAD</option>
+          <option value="AUD">AUD</option>
+          <option value="JPY">JPY</option>
+          <option value="CHF">CHF</option>
+          <option value="CNY">CNY</option>
+          <option value="INR">INR</option>
+          <option value="MXN">MXN</option>
+          <option value="NZD">NZD</option>
+          <option value="RUB">RUB</option>
+          <option value="ZAR">ZAR</option>
+          <option value="BRL">BRL</option>
+        </select>
+        <input type="number" placeholder="Converted Amount" min="0" readonly>
+      </div>
+      <div id="exchange-rate">Exchange Rate: 1 USD = 0.85 EUR</div>
+    </form>
+
+    <!-- HOW DOES THIS CURRENCY CONVERTER WORK? -->
+    <div class="container">
+      <section class="how-it-works">
+        <h2>HOW DOES THIS CURRENCY CONVERTER WORK</h2>
+        <p>This currency converter will show you how much your money is worth in other currencies at the real exchange
+          rate. You can convert currencies quickly and easily.</p>
+        <p>Simply input your amount in the currency calculator above, select your source and destination currency and
+          our tool will convert your currency at the mid-market rate (that's the one you'll usually find on Google).</p>
+      </section>
+    </div>
+
+  </main>
+
+  <!-- JavaScript File -->
   <script src="assets/js/script.js"></script>
 </body>
 

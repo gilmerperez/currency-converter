@@ -1,20 +1,34 @@
 *,
 *::before,
 *::after {
-  /* border: 1px solid red; */
+  border: 1px solid red;
 }
 
 body {
+  display: flex;
   margin: 0 auto;
+  min-height: 100%;
   max-width: 1200px;
-  font-family: "Outfit", sans-serif;
+  overflow-x: hidden;
+  flex-direction: column;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
   background-color: hsl(138, 100%, 15%);
+  font-family: "Outfit", "Inter", sans-serif;
 }
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* HEADER */
 
 header {
   padding: 1rem;
   display: flex;
   align-items: center;
+  margin-bottom: 2rem;
   justify-content: space-between;
 }
 
@@ -47,6 +61,51 @@ header nav button {
 }
 
 header nav button:hover {
-  background-color: hsl(97, 72%, 50%);
   transform: scale(1.05);
+  background-color: hsl(97, 72%, 50%);
 }
+
+/* MAIN */
+
+main {
+  width: 100%;
+  flex-grow: 1;
+}
+
+main h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: hsl(97, 72%, 67%);
+}
+
+main form {
+  display: flex;
+  padding: 2rem;
+  margin: 0 auto;
+  max-width: 1000px;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  background-color: hsl(0, 0%, 95%);
+}
+
+.how-it-works {
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.how-it-works h2 {
+  font-size: 4rem;
+  margin-bottom: 3rem;
+  color: hsl(97, 72%, 67%);
+}
+
+.how-it-works p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: hsl(97, 72%, 50%);
+}
+
+/* FOOTER */
